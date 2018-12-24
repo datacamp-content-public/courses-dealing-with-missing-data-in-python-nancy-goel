@@ -52,7 +52,7 @@ key: "ebd02f457b"
 ```
 
 `@part1`
-
+Once you worked on fillna method, you can use Mean and Median,
 
 
 `@part2`
