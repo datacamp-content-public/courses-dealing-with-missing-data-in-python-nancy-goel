@@ -17,7 +17,7 @@ title: Data Analyst
 
 
 `@script`
-
+In the last set of exercises, you worked on marking and removing rows with missing data. Now let's move towards a more realistic problem where forward and backward filling of missing data come in handy.
 
 
 ---
