@@ -3,46 +3,6 @@ title: 'Operating on Missing Data'
 description: 'After a quick understanding of what are the different types of missing data, you would deal with in real-life problems, let''s move further by learning how would you operate on different types of missing data.'
 ---
 
-## Example coding exercise
-
-```yaml
-type: NormalExercise
-key: e8c1edbe67
-lang: python
-xp: 100
-skills: 2
-```
-
-This is an example exercise.
-
-`@instructions`
-
-
-`@hint`
-
-
-`@pre_exercise_code`
-```{python}
-
-```
-
-`@sample_code`
-```{python}
-
-```
-
-`@solution`
-```{python}
-
-```
-
-`@sct`
-```{python}
-
-```
-
----
-
 ## Forward and Backward Filling
 
 ```yaml
