@@ -49,38 +49,41 @@ Before moving directly to forward fill and backward fill, you will learn about f
 
 
 ---
-## Forward and Backward Fill
+## Forward and Backward Filling
 
 ```yaml
-type: "TwoRowsTwoColumns"
-key: "8cdf1116c1"
+type: "FullSlide"
+key: "c895a2a285"
 ```
 
 `@part1`
-- if a previous value is not available during a forward fill, or backward fill the NA value remains.
+- if a previous value is not available during a forward fill, or backward fill the NA value remains. {{0}}
 
-
-`@part2`
-|Date|A|B|
-|---|---|---|
-|01-01-2017|||
-|01-01-2017 |||
-|01-01-2017 |0.18127718|-0.178835737|
-|01-01-2017 | 0.186923018 |-0.183260853|
-| 01-01-2017 | | |
-| 01-01-2017 | | |
-
-
-`@part3`
-hello
-
-
-`@part4`
-he
+![](https://assets.datacamp.com/production/repositories/4322/datasets/7887940cca37f7adb1131a3401c9eff59c637aa6/Screen%20Shot%202018-12-24%20at%2010.50.44%20PM.png) {{1}}
 
 
 `@script`
 You just learned Forward and Backward fill. But what if you don't have any data in the previous row for forward fill and following row for backward fill. Look at this table. If data appears something like this. In such a scenario, you would use both forward and backward fill attributes as shown in the code.
+
+
+---
+## Forward and Backward Continued... 
+
+```yaml
+type: "FullSlide"
+key: "9f03f228c5"
+```
+
+`@part1`
+```python
+In [0]: import pandas as pd
+In [1]: data = pd.read_csv('test.csv')
+
+``` {{0}}
+
+
+`@script`
+
 
 
 ---
