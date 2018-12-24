@@ -44,46 +44,6 @@ key: "b581267353"
 
 
 ---
-## Mean and Median
-
-```yaml
-type: "TwoColumns"
-key: "ebd02f457b"
-```
-
-`@part1`
-Once you worked on fillna method, you can use Mean and Median,
-
-
-`@part2`
-
-
-
-`@script`
-
-
-
----
-## Ffill and Bfill
-
-```yaml
-type: "TwoColumns"
-key: "e8fcfc6094"
-```
-
-`@part1`
-
-
-
-`@part2`
-
-
-
-`@script`
-
-
-
----
 ## Let's try out this method!
 
 ```yaml
