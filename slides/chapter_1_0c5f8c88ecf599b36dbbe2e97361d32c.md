@@ -56,6 +56,7 @@ Before moving directly to forward fill and backward fill, you will learn about f
 ```yaml
 type: "FullSlide"
 key: "c895a2a285"
+code_zoom: 123
 ```
 
 `@part1`
@@ -74,6 +75,7 @@ You just learned Forward and Backward fill. But what if you don't have any data 
 ```yaml
 type: "FullSlide"
 key: "9f03f228c5"
+code_zoom: 140
 ```
 
 `@part1`
