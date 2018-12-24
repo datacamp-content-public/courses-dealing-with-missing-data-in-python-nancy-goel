@@ -1,3 +1,80 @@
 {
-  "slides/chapter_1_0c5f8c88ecf599b36dbbe2e97361d32c.md": []
+  "slides/chapter_1_0c5f8c88ecf599b36dbbe2e97361d32c.md": [
+    {
+      "timing": 0,
+      "state": {
+        "indexh": 0,
+        "indexf": -1
+      }
+    },
+    {
+      "timing": 0.178618845177665,
+      "state": {
+        "indexh": 0,
+        "indexf": 0
+      }
+    },
+    {
+      "timing": 0.25806425549915396,
+      "state": {
+        "indexh": 1,
+        "indexf": -1
+      }
+    },
+    {
+      "timing": 0.4272598561759729,
+      "state": {
+        "indexh": 1,
+        "indexf": 0
+      }
+    },
+    {
+      "timing": 0.453581641285956,
+      "state": {
+        "indexh": 1,
+        "indexf": 1
+      }
+    },
+    {
+      "timing": 0.485451755499154,
+      "state": {
+        "indexh": 2,
+        "indexf": -1
+      }
+    },
+    {
+      "timing": 0.8502180414551608,
+      "state": {
+        "indexh": 2,
+        "indexf": 0
+      }
+    },
+    {
+      "timing": 0.8767543570219966,
+      "state": {
+        "indexh": 2,
+        "indexf": 1
+      }
+    },
+    {
+      "timing": 0.9559529187817258,
+      "state": {
+        "indexh": 3,
+        "indexf": -1
+      }
+    },
+    {
+      "timing": 0.9877904822335025,
+      "state": {
+        "indexh": 3,
+        "indexf": 0
+      }
+    },
+    {
+      "timing": 1,
+      "state": {
+        "indexh": 4
+      }
+    }
+  ]
 }

@@ -1,6 +1,8 @@
 ---
 title: Insert title here
 key: 0c5f8c88ecf599b36dbbe2e97361d32c
+video_link:
+  mp3: https://assets.datacamp.com/production/repositories/4322/datasets/63e160b364593fb67f5aa09c79479e6f0bbfa52d/PTT-20181224-WA0001.mp3
 
 ---
 ## Forward and Backward Filling
@@ -67,7 +69,7 @@ You just learned Forward and Backward fill. But what if you don't have any data 
 
 
 ---
-## Forward and Backward Continued... 
+## Forward and Backward Continued...
 
 ```yaml
 type: "FullSlide"
