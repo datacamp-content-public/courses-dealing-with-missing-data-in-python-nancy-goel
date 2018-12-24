@@ -26,10 +26,14 @@ In the last set of exercises, you worked on marking and removing rows with missi
 ```yaml
 type: "TwoRows"
 key: "b581267353"
+center_content: false
+disable_transition: false
 ```
 
 `@part1`
-- is used when data in considerable amount of rows is missing.{{0}}
+- is used when data in considerable amount of rows is missing.
+- forward fill and backward fill are attributes of this method.
+{{0}}
 
 
 `@part2`
@@ -41,7 +45,7 @@ key: "b581267353"
 
 
 `@script`
-
+Before moving directly to forward fill and backward fill, you will learn about fillna method. This method is used when a considerable amount of rows are missing in your dataset. Take a look at the following dataset and note the total number of rows.
 
 
 ---
