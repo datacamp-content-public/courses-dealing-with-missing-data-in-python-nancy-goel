@@ -29,7 +29,7 @@ key: "b581267353"
 ```
 
 `@part1`
-- is used when data in considerable amount of rows is missing.
+- is used when data in considerable amount of rows is missing.{{0}}
 
 
 `@part2`
@@ -37,6 +37,7 @@ key: "b581267353"
 >> Import pandas as pd
 >> 
 ```
+{{1}}
 
 
 `@script`
