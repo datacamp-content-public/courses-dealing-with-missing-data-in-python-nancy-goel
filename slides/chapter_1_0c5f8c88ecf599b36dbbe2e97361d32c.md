@@ -17,7 +17,7 @@ title: Data Analyst
 
 
 `@script`
-In the last set of exercises, you worked on marking and removing rows with missing data. Now let's move towards a more realistic problem where forward and backward filling of missing data come in handy.
+In the last set of exercises, you worked on marking and removing rows with missing data. Now let's move towards a more realistic problem where forward and backward filling of missing data come handy.
 
 
 ---
@@ -57,7 +57,7 @@ Before moving directly to the concepts of forward fill and backward fill, you wi
 
 
 ---
-## Fillna() Continued...
+## Fillna() method
 
 ```yaml
 type: "FullSlide"
@@ -98,7 +98,7 @@ Since 30% is a considerable amount, you can't simply drop all the rows with miss
 
 
 ---
-## Forward and Backward Filling
+## Forward and Backward Fill
 
 ```yaml
 type: "FullSlide"
@@ -107,18 +107,18 @@ code_zoom: 123
 ```
 
 `@part1`
-- Forward Fill: Filling null values with value in the previous rows.{{0}}
-- Backward Fill: Filling null values with value in the following rows.{{1}}
+- Forward Fill: Filling null values with value in the **previous** rows.{{0}}
+- Backward Fill: Filling null values with value in the **following **rows.{{1}}
 
-![](https://assets.datacamp.com/production/repositories/4322/datasets/7887940cca37f7adb1131a3401c9eff59c637aa6/Screen%20Shot%202018-12-24%20at%2010.50.44%20PM.png) {{2}}
+![](https://assets.datacamp.com/production/repositories/4322/datasets/a0ff1e7c84bd5aa0adf4291062c01d033e3ecf57/Screenshot.png) {{2}}
 
 
 `@script`
-You have other attributes in the fillna method, which could be used to fill the columns with missing values. One of which is forward fill attribute. When you fill the null values with the value in the previous row of the same column, then this is called forward filling. Another is backward fill attribute. When you fill the null values with the value in the following row of the same column, then this is known to be as backward filling. Let's consider the following test data. Here we have missing values in the columns A and B.
+You have other attributes in the fillna method, which could be used to fill the columns with missing values. One of which is forward fill attribute. When you fill the null values with the value in the previous row of the same column, then this is called forward filling. Another is backward fill attribute. When you fill the null values with the value in the following row of the same column, then this is known to be as backward filling. Let's consider the following test data. Here you have missing values in the columns A and B.
 
 
 ---
-## Forward and Backward Continued...
+## Forward Fill
 
 ```yaml
 type: "FullSlide"
@@ -129,15 +129,94 @@ code_zoom: 140
 `@part1`
 ```python
 In [0]: import pandas as pd
-In [1]: data = pd.read_csv('test.csv')
-
+In [1]: df = pd.read_csv('test.csv')
+In [2]: data = df.fillna(method='ffill')
 ``` {{0}}
 
-- if a previous value is not available during a forward fill, or backward fill the NA value remains.{{1}}
+![](https://assets.datacamp.com/production/repositories/4322/datasets/be3829a5e756be5b8eef0d33a50d0582f5ce3a75/Screen%20Shot%202018-12-25%20at%202.42.02%20PM.png){{1}}
 
 
 `@script`
-You just learned Forward and Backward fill. But what if you don't have any data in the previous row for forward fill and following row for backward fill. Look at this table. If data appears something like this. In such a scenario, you would use both forward and backward fill attributes as shown in the code.
+Here you try both forward and backward fill, one by one. First is forward fill. You will use method = ffill in single quotes to implement this attribute. As you see, row with indices 1 and 5 are filled with previous row values.
+
+
+---
+## Backward Fill
+
+```yaml
+type: "FullSlide"
+key: "5b00ec1695"
+```
+
+`@part1`
+```python
+In [0]: import pandas as pd
+In [1]: df = pd.read_csv('test.csv')
+In [2]: data = df.fillna(method='bfill')
+``` {{0}}
+
+![](https://assets.datacamp.com/production/repositories/4322/datasets/ecc31f631f0c536fe49548b9b971924db5adf588/Screen%20Shot%202018-12-25%20at%203.06.36%20PM.png){{1}}
+
+
+`@script`
+Next is backward fill. You will use method = bfill in single quotes to implement this attribute. As you see, row with indices 1 and 5 are filled with following row values.
+
+
+---
+## Forward and Backward Fill
+
+```yaml
+type: "FullSlide"
+key: "8677e6d2f8"
+```
+
+`@part1`
+- if a previous value is not available during a forward fill, or backward fill the NA value remains.{{0}}
+
+![](https://assets.datacamp.com/production/repositories/4322/datasets/35e7a324a88d459a3d5f54d3553d1ed713884e81/Screen%20Shot%202018-12-25%20at%203.15.18%20PM.png){{1}}
+
+
+`@script`
+Now,What if you don't have any data in the previous row for forward fill and following row for backward fill. Look at this table. In such a scenario, use of forward and backward fill separately won't serve the purpose.
+
+
+---
+## Forward and Backward Fill
+
+```yaml
+type: "FullSlide"
+key: "7949b94929"
+```
+
+`@part1`
+```Python
+In [1]: data = df.fillna(method='ffill').fillna(method='bfill')
+```{{0}}
+![](https://assets.datacamp.com/production/repositories/4322/datasets/84f1973d2ade7ad02cd2468302231338fee93a8e/Screen%20Shot%202018-12-25%20at%203.17.56%20PM.png){{1}}
+
+
+`@script`
+So, you would use both forward and backward fill attributes as shown in the code. And you get the right output.
+
+
+---
+## Summary
+
+```yaml
+type: "FullSlide"
+key: "69de38fc1f"
+```
+
+`@part1`
+Fillna() method
+- Importance of this method
+- Discrete values,Mean and Median
+- Forward Fill
+- Backward Fill
+
+
+`@script`
+Here's what we have covered so far.
 
 
 ---
