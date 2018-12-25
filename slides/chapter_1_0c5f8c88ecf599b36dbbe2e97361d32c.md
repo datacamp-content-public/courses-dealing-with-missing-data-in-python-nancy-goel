@@ -42,10 +42,16 @@ disable_transition: false
 In [0]: Import pandas as pd
 In [1]: state_data = pd.read_csv('state-population.csv')
 In [2]: state_data.shape
-Out[2]: (2544, 4)
+Out[2]: (2544, 4) {{1}}
+In [3]: state_data.isnull().sum()
+Out[3]: state/region      0
+        ages              0
+        year            628
+        population      146
+        dtype: int64
 
 ```
-{{1}}
+{{2}}
 
 
 `@script`
