@@ -51,7 +51,7 @@ code_zoom: 123
 `@part1`
 - if a previous value is not available during a forward fill, or backward fill the NA value remains. {{0}}
 
-![](https://assets.datacamp.com/production/repositories/4322/datasets/7887940cca37f7adb1131a3401c9eff59c637aa6/Screen%20Shot%202018-12-24%20at%2010.50.44%20PM.png) {{1}}
+!(https://assets.datacamp.com/production/repositories/4322/datasets/7887940cca37f7adb1131a3401c9eff59c637aa6/Screen%20Shot%202018-12-24%20at%2010.50.44%20PM.png) {{1}}
 
 
 `@script`
