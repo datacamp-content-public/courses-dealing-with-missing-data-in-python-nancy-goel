@@ -2,7 +2,6 @@
 title: Insert title here
 key: 0c5f8c88ecf599b36dbbe2e97361d32c
 video_link:
-  mp3: https://assets.datacamp.com/production/repositories/4322/datasets/63e160b364593fb67f5aa09c79479e6f0bbfa52d/PTT-20181224-WA0001.mp3
 
 ---
 ## Forward and Backward Filling
@@ -40,14 +39,17 @@ disable_transition: false
 
 `@part2`
 ```Python
->> Import pandas as pd
->> 
+In [0]: Import pandas as pd
+In [1]: state_data = pd.read_csv('state-population.csv')
+In [2]: state_data.shape
+Out[2]: (2544, 4)
+
 ```
 {{1}}
 
 
 `@script`
-Before moving directly to forward fill and backward fill, you will learn about fillna method. This method is used when a considerable amount of rows are missing in your dataset. Take a look at the following dataset and note the total number of rows.
+Before moving directly to forward fill and backward fill, you will learn about fillna method. This method is used when a considerable amount of rows are missing in your dataset. Forward fill and backward fill are the two attributes of this method. Take a look at the following dummy dataset and note the total number of rows.
 
 
 ---
