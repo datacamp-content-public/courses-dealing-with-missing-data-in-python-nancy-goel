@@ -74,11 +74,7 @@ code_zoom: 140
 ```
 
 `@part1`
-```python
-In [0]: import pandas as pd
-In [1]: data = pd.read_csv('test.csv')
 
-``` {{0}}
 
 
 `@script`
