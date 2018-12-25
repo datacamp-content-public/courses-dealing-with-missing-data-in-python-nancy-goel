@@ -25,20 +25,14 @@ In the last set of exercises, you worked on marking and removing rows with missi
 ## Fillna() method
 
 ```yaml
-type: "TwoRows"
-key: "b581267353"
-center_content: false
-disable_transition: false
+type: "FullSlide"
+key: "740519e836"
 ```
 
 `@part1`
 - is used when data in considerable amount of rows is missing.
 - forward fill and backward fill are attributes of this method.
 {{0}}
-
-
-`@part2`
-
 
 
 `@script`
